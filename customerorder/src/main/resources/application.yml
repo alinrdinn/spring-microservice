@@ -1,0 +1,17 @@
+server:
+    port: 8080
+spring:
+    application:
+        name: customerorder
+    datasource:
+        url: jdbc:postgresql://db.hnemtpepkqzsirjdvlfc.supabase.co:5432/postgres?user=postgres&password=bQbuWoMhr7XYEEl9
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8082/eureka
+        fetch-registry: true
+        register-with-eureka: true

@@ -1,0 +1,17 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: transactionlog
+    datasource:
+        url: jdbc:postgresql://db.gjlzkapbdumqidscmzyv.supabase.co:5432/postgres?user=postgres&password=G6C15flcHA8U5oJl
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8082/eureka
+        fetch-registry: true
+        register-with-eureka: true
